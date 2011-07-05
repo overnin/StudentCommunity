@@ -1,0 +1,12 @@
+<p>Google group {{googlegroup_object.name}}</p>
+{% if post_list %}
+	<ul>
+		{% for post in post_list %}
+			<li>{{post.post_number}} on {{post.post_date}}</li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>No post for this group</p>
+{% endif %}
+
+	

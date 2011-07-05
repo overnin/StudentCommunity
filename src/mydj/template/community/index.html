@@ -1,0 +1,10 @@
+{% if googlegroup_list %}
+	<p>Registered Google Group</p>
+	<ul>
+		{% for googlegroup in googlegroup_list %}
+			<li><a href="/community/{{googlegroup.id}}">{{googlegroup.name}}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<p>No Google Group registered</p>
+{% endif %}
